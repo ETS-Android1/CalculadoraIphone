@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDebug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Debugg panel" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:fontFamily="@font/calculator"
+        android:gravity="bottom|end"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="70sp"
+        android:autoSizeTextType="uniform" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:collapseColumns="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_white"
+                android:text="AC"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnMasMenos"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+
+                android:background="@drawable/buttons_white"
+                android:text="+/-"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnPorcentaje"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_white"
+                android:text="%"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnDivision"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_orange"
+                android:text="÷"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnMultiplicacion"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_orange"
+                android:text="×"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnResta"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_orange"
+                android:text="−"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnSuma"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_orange"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnComa"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_calculator"
+                android:text=","
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnIgual"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_orange"
+                android:text="="
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:backgroundTint="@null" />
+
+            <Button
+
+                android:id="@+id/btnDelete"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttons_orange"
+                android:backgroundTint="#BD3131"
+                android:text="DEL"
+                app:backgroundTint="@null"
+                android:textSize="20sp"
+                app:srcCompat="@drawable/delete"
+                tools:ignore="VectorDrawableCompat" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
